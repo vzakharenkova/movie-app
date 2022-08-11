@@ -1,0 +1,175 @@
+html {
+    height: 100%;
+}
+body {
+    margin: 0 auto;
+    font-family: 'Roboto Serif', sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: rgb(119, 6, 63);
+    padding: 20px 20px;
+    flex: 1 1 5%;
+}
+#app-description-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+#app-description {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 5px;
+    padding-right: 10px;
+}
+#search-container {
+    margin: auto 0;
+}
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+input {
+    display: block;
+    border: #fff solid 2px;
+    background-color: rgba(255, 255, 255, 0.199);
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Roboto Serif', sans-serif;
+    line-height: 25px;
+    margin-right: 10px;
+    transition: all 0.5s ease-in 0s;
+    width: 250px;
+    align-self: baseline;
+    padding: 3px 10px;
+}
+input:focus {
+    width: 300px;
+}
+input:focus-visible {
+    outline: none;
+}
+::placeholder {
+    color: rgba(255, 255, 255, 0.322);
+}
+button {
+    display: block;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+i {
+    color: #fff;
+    font-size: 25px !important;
+}
+main {
+    flex: 1 1 90%;
+}
+#app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+h1 {
+    margin-top: 60px;
+    align-self: center;
+    font-size: 40px;
+    font-weight: 900;
+}
+#movies-examples-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex: 1 1 20%;
+}
+.movie-example {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    width: 20%;
+    margin-bottom: 20px;
+    background-color: rgb(243, 208, 225);
+    border: solid 2px rgb(119, 6, 63);
+}
+.movie-example:hover .movie-review {
+    top: 0;
+    opacity: 1;
+}
+.movie-poster {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+.movie-rating {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    color: rgb(119, 6, 63);
+    top: 0;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    border: solid 2px rgb(119, 6, 63);
+    border-radius: 40%;
+    font-family: 'Roboto Serif', sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+    padding: 2px;
+}
+.movie-review {
+    position: absolute;
+    width: 100%;
+    max-height: 100%;
+    top: -100%;
+    opacity: 0;
+    background-color: rgb(243, 208, 225);
+    transition: all 0.8s ease-in 0s;
+    font-size: 18px;
+    color: black;
+    line-height: 20px;
+    text-align: center;
+    overflow: auto;
+}
+.movie-review div {
+    padding: 10px;
+}
+figcaption {
+    margin: 10px;
+    text-align: center;
+    font-family: 'Roboto Serif', sans-serif;
+    font-weight: 900;
+    align-items: flex-end;
+}
+.movie-release {
+    text-align: center;
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
+footer {
+    flex: 1 1 5%;
+    background-color: rgb(119, 6, 63);
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+}
+footer *{
+    font-family: 'Roboto Serif', sans-serif;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.507);
+    align-self: center;
+}
+#rs-logo {
+    height: 100%;
+    width: 80px;
+}
